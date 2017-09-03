@@ -1,0 +1,462 @@
+.gwt-Image {
+  margin: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+.gwt-DialogBox .dialogMiddleCenter {
+ padding: 3px;
+ background-color: #F6E8B1;
+}
+.gwt-PopupPanel {
+	border-radius: 6px;
+	border-color: orange;
+}
+
+
+#mainView {
+}
+.boundaryDragAndDrop {
+}
+
+#mainUserTaskView {
+	background-image: url("../images/croissantALunette.png");
+	background-repeat: no-repeat;
+	background-position: -5px -10px;
+}
+
+#mainGlobalHistoryView {
+	background-image: url("../images/cafenoir.gif");
+	background-repeat: no-repeat;
+	width: 800px;
+}
+
+#userContainer {
+	width: 200px;
+	min-height: 300px;
+	position: relative;
+	top: 0;
+	left: 200px;
+	padding: 5px;
+	border-style: solid;
+	border-color: #FF5900;
+	border-width: thin;
+	border-radius: 10px;
+}
+.userWidgetList {
+	min-height: 300px;
+}
+
+#mainDispatchUserView {
+
+	background-repeat: no-repeat;
+	width: 800px;
+}
+#dispatchViewTitle {
+  font-size: 2em;
+  color: orangered;
+  margin-bottom: 10px;
+  margin-left: 40px;
+}
+
+#dispatchUserArrowWidget {
+	position: fixed;
+}
+#dispatchUserArrow {
+	
+	width: 50px;
+	height: 300px;	
+}
+.dispatchUserArrowLabel {
+	color: #FF5900;
+	width: 50px;
+}
+#dispatchUserContainer {
+	width: 350px;
+	min-height: 300px;
+	position: relative;
+	border-style: solid;
+	border-color: #FF5900;
+	border-width: medium;
+	border-radius: 10px;
+	padding: 5px;
+	margin-left: 30px;
+}
+.dispatchUserLabel {
+	color: #FF5900;
+}
+#dispatchUserList {
+	min-height: 300px;
+}
+#incompleteTaskContainer {
+	
+	width: 400px;
+	min-height: 300px;
+	position: relative;
+	border-style: solid;
+	border-color: #FF5900;
+	border-width: medium;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+#incompleteTaskWidgetList {
+   margin-left: 30px;
+}
+#taskContainer {
+	
+	width: 400px;
+	min-height: 300px;
+	position: relative;
+	border-style: solid;
+	border-color: #FF5900;
+	border-width: medium;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+#taskWidgetList {
+   margin-left: 30px;
+}
+
+#historyContainer {
+	
+	width: 500px;
+	min-height: 300px;
+	border-style: solid;
+	border-color: #FF5900;
+	border-width: medium;
+	border-radius: 10px;
+	padding: 5px;
+	margin-left: 300px;
+}
+#historyTitle {
+  font-size: 2em;
+  margin-left: 300px;
+  color: orangered;
+   margin-top: 20px;
+}
+
+
+#historyWidgetList {
+   margin-left: 100px;
+}
+
+#historyPagination {
+  width: 120px;
+  margin-left: 250px;
+  margin-bottom: 20px;
+  color: orangered;
+}
+
+#mySelfPanel {
+	
+    height: 100px;
+    padding: 5px;
+    width: 100px;
+	
+}
+.userGlobalWidget {
+	width: 85px;
+	display: inline-block;
+	height: 75px;
+}
+.userWidget {
+	
+  width: 55px;
+  height: 50px;
+  margin: 5px;
+  color: #FFFFCC;
+  font-size: 10px;
+}
+.userHistoryWidget{
+	 color: #FFFFCC;
+}
+.userOneHistoryWidget{
+	color: green;
+}
+.userDispatchWidget{
+	 color: #FFFFCC;
+}
+.picto16x16 {
+	width: 16px;
+	height: 16px;
+}
+.caseUserWidget {
+	height: 75px;
+	width: 85px;
+	border-width: thin;
+	border-style: dotted;
+	border-color: darkorange;
+	margin-left: 15px;
+}
+
+.editUserTextbox {
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 10px;
+}
+.userDefaultPanel {
+	
+	width: 40px;
+	height: 40px;
+	border-style: dotted;
+	border-color: blue;
+	border-width: thin;
+	font-size: 2em;
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+   	margin-top:8px;	
+}
+
+.userInfoPanel {
+	width: 100%;
+	height: 100%;
+}
+.userInfoPanel:hover {
+	background-color: lightcoral;
+}
+.galleryWidget {
+   height: 250px;
+   width: 80px;
+   overflow: auto;
+   border-color: black;
+   border-style: solid;
+   border-width: thin;
+}
+
+.galleryWidget .panelImage {
+	border-color: white;
+    border-style: solid;
+    border-width: thin;
+}
+.galleryWidget .panelImage:hover {
+    border-color: blue;
+}
+.imageSelected {
+	background-color: yellow;
+}
+	
+.taskGlobalWidget {
+	
+}
+.taskWidget {
+	margin-right: 5px;
+	width: 300px;
+	height: 30px;
+}
+
+.gwt-DateBox {
+border-radius: 6px;
+}
+.taskDateBox.past {
+	background-color: lightgrey;
+    color: beige;
+    border-color: grey;
+}
+.taskDateBox.nopast {
+	background-color: lightcyan;
+	border-color: green;
+}
+.taskDateBox.daterror {
+	background-color: red;
+	color: beige;
+}
+.taskDateBox {
+	border-style: solid;
+	border-width: thick;
+}
+.contextMenu {
+  width: 100px;
+  background-color: #F6E8B1;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  border-radius: 4px 4px 4px 4px;
+  z-index: 100;
+}
+.dragging {
+	border-color: orange;
+	border-width: medium;
+	border-style: solid;
+}
+.droppable {
+	background-color: orange;
+}
+.droppableOver {
+	background-color: yellow;
+}
+
+
+.imgAnchor {
+    background-image: url("../images/Anchor.png");
+    background-repeat: no-repeat;	
+    width: 20px;
+	height: 18px;
+}
+.imgDetail {
+	background: url("../images/detail.png");
+    background-repeat: no-repeat;	
+    width: 16px;
+	height: 16px;
+	background-position: 50%;
+}
+.imgEraseUser {
+	background: url("../images/Trash.png");
+    background-repeat: no-repeat;	
+    width: 16px;
+	height: 16px;
+	background-position: 50%;
+}
+.imgShowAbsence {
+	background: url("../images/Schedule.png");
+    background-repeat: no-repeat;	
+    width: 16px;
+	height: 16px;
+	background-position: 50%;
+}
+.imgEraseAbsence {
+	background: url("../images/Erase.png");
+    background-repeat: no-repeat;	
+    width: 16px;
+	height: 16px;
+	background-position: 50%;
+}
+.imgScore {
+	background: url("../images/score.gif");
+    background-repeat: no-repeat;	
+    width: 16px;
+	height: 16px;
+	background-position: 50%;
+}
+.imgNoMarging {
+	margin: 0px;
+}
+.imgUp {
+	background: url("../images/Up.png");
+    background-repeat: no-repeat;	
+    width: 16px;
+	height: 16px;
+	background-position: 50%;
+}
+.imgDown {
+	background: url("../images/Down.png");
+    background-repeat: no-repeat;	
+    width: 16px;
+	height: 16px;
+	background-position: 50%;
+}
+.imgFirst {
+	background: url("../images/First.gif");
+    background-repeat: no-repeat;	
+    width: 16px;
+	height: 16px;
+	background-position: 50%;	
+}
+.imgBack {
+		background: url("../images/Back.gif");
+    background-repeat: no-repeat;	
+    width: 16px;
+	height: 16px;
+	background-position: 50%;
+}
+.imgForward {
+	background: url("../images/Forward.gif");
+    background-repeat: no-repeat;	
+    width: 16px;
+	height: 16px;
+	background-position: 50%;	
+}
+.imgLast {
+	background: url("../images/Last.gif");
+    background-repeat: no-repeat;	
+    width: 16px;
+	height: 16px;
+	background-position: 50%;	
+}
+
+.popupScore {
+	background-color: white;
+}
+.panelButtonPrinc {
+	height: 100px;
+	width: 210px;
+	margin-left: 10px;
+    margin-top: 20px;
+}
+.panelButtonPrinc .textButtonPrinc{
+	float: left;
+    left: 50px;
+    position: relative;
+    top: 30px;
+}
+.panelButtonPrinc .cafeButton.disabled:hover{
+	background-color: lightblue;
+}
+.panelButtonPrinc .cafeButton.disabled{
+	background-color: lightblue;
+}
+.panelButtonPrinc .cafeButton:hover{
+	background-color: orangered;
+}
+.panelButtonPrinc .cafeButton{
+    background-color: orange;
+    background-image: url("../images/smalllogocafe.gif");
+    background-repeat: no-repeat;
+    border-radius: 4px 4px 4px 4px;
+    color: #000000;
+    font-size: 12px;
+    height: 100px;
+    width: 150px;	
+}
+.panelButton{
+	height: 30px;
+	width: 210px;
+}
+.panelButton .imageIcone{
+	background-image: url("../images/minicroissant.gif");
+	background-repeat: no-repeat;
+	position: relative;
+	top: -12px;
+	width: 30px;
+	height: 30px;
+	float: left;
+	left: 21px;
+}
+
+.panelButton .croissantButton:hover {
+	background: #f1e767; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #f1e767 0%, #feb645 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#f1e767), color-stop(100%,#feb645)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #f1e767 0%,#feb645 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #f1e767 0%,#feb645 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #f1e767 0%,#feb645 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #f1e767 0%,#feb645 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.panelButton .croissantButton.disabled:hover {
+	background: aliceblue;
+}
+.panelButton .croissantButton.disabled {
+	background: aliceblue;
+}
+.panelButton .croissantButton {
+	background: #f1e767; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f1e767 0%, #feb645 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1e767), color-stop(100%,#feb645)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f1e767 0%,#feb645 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f1e767 0%,#feb645 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f1e767 0%,#feb645 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f1e767 0%,#feb645 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=0 ); /* IE6-9 */
+	border-radius: 4px 4px 4px 4px;
+	color: black;
+	width: 150px;
+	height: 30px;
+	font-size: 12px;
+}
+
+.wrongValue {
+	color: darkred;
+}

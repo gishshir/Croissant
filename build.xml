@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <project default="serverjar" name="Croissants">
+ 	
+ 	<target name="serverjar">
+ 	 	<jar destfile="war/WEB-INF/lib/Croissants.jar">
+ 	 		<fileset dir="war/WEB-INF//classes" casesensitive="yes">
+ 	 		  <include name="**/*.class"/>
+ 	 		</fileset>
+ 	 	</jar>	 	 	 	 	 	 		  
+ 	</target>
+	 <!-- set global properties for this build -->
+  <property name="src" location="src"/>
+  <property name="war" location="war"/>
+  <property name="build" location="build"/>
+  <property name="dist" location="dist"/>
+
+  <target name="init">
+    <!-- Create the time stamp -->
+    <tstamp/>
+    <!-- Create the build directory structure used by compile -->
+    <mkdir dir="${build}"/>
+  </target>
+  
+   <target name="clean"
+        description="clean up">
+    <!-- Delete the ${build} and ${dist} directory trees -->
+    <delete dir="${build}"/>
+    <delete dir="${dist}"/>
+  </target>
+  
+  <target name="copywar" depends="init, clean"
+      description="copy war resources into dist directory" >
+	   <!-- Create the distribution directory -->
+    <mkdir dir="${dist}"/>
+	<copy todir="${dist}/war">
+		<fileset dir="${war}">
+			<exclude  name="**/classes/com/**"/>
+			<exclude  name="**/deploy/**"/>
+		</fileset>
+	</copy>	
+  </target>
+  
+  <target name="buildwar">
+  <war destfile="${dist}/croissants.war" webxml="${dist}/war/WEB-INF/web.xml"
+       description="build war in /dist directory">
+  <fileset dir="${dist}/war"/>
+</war>
+</target>
+
+<target name="copyandbuildwar" depends="copywar, buildwar"
+description="Copy file to dist and build war"/>
+ 	
+ 	<target name="sauv">
+ 	 	<zip destfile="Croissants.zip">
+ 	 		<fileset dir="src" casesensitive="yes">
+ 	 		    <include name="**/*.java"/>
+ 	 			<include name="**/*.xml"/>
+ 	 			<include name="**/*.properties"/>
+ 	 			<include name="**/*.css"/>
+ 	 		</fileset>
+ 	 		<fileset dir="war/" casesensitive="yes">
+ 	 			<include name="**/*.html"/>
+ 	 			<include name="**/*.css"/>
+ 	 		</fileset>
+ 	 		<fileset dir="war/WEB-INF" casesensitive="yes">
+ 	 			<include name="web.xml"/>
+ 	 		</fileset>
+ 	 	</zip>	 	 	 	 	 	 		  
+ 	</target>
+ 	
+ </project>
